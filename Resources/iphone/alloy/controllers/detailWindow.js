@@ -9,6 +9,7 @@ function Controller() {
     $.__views.window = Ti.UI.createWindow({
         backgroundColor: "white",
         id: "window",
+        title: "Detail",
         layout: "vertical"
     });
     $.__views.window && $.addTopLevelView($.__views.window);

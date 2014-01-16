@@ -46,6 +46,7 @@ function Controller() {
     Alloy.Collections.instance("vehicle");
     $.__views.__alloyId56 = Ti.UI.createWindow({
         backgroundColor: "#fff",
+        title: "ListView III",
         id: "__alloyId56"
     });
     var __alloyId58 = {};
@@ -130,12 +131,11 @@ function Controller() {
     itemClicked ? $.__views.__alloyId57.addEventListener("itemclick", itemClicked) : __defers["$.__views.__alloyId57!itemclick!itemClicked"] = true;
     $.__views.navWin = Ti.UI.iOS.createNavigationWindow({
         window: $.__views.__alloyId56,
-        title: "Detail",
         id: "navWin"
     });
     $.__views.tab3 = Ti.UI.createTab({
         window: $.__views.navWin,
-        title: "Detail",
+        title: "ListView III",
         icon: "KS_nav_views.png",
         id: "tab3"
     });

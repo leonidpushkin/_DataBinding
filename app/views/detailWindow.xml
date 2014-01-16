@@ -1,5 +1,5 @@
 <Alloy>
-    <Window id="window" backgroundColor="white" layout="vertical">
+    <Window id="window" title="Detail" backgroundColor="white" layout="vertical">
         <Label text="{vin}"></Label>
         <Label text="{modelDescription}"></Label>
         <Label text="{comment}"></Label>
