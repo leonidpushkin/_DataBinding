@@ -1,0 +1,23 @@
+<Alloy>
+    <Collection src="vehicle"/>
+    <Tab title="Detail" icon="KS_nav_views.png">
+        <NavigationWindow title="Detail" id="navWin">
+            <Window>
+                <ListView defaultItemTemplate="rows" onItemclick="itemClicked">
+                    <Templates>
+                        <!-- Define your item templates within the Templates tags or use the
+                        Require tag to include a view that only contains an ItemTemplate -->
+                        <ItemTemplate name="rows" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE" bindId="vehicleId">
+                            <Label bindId="vin" id="vin" />
+                            <Label bindId="modelDescription" id="modelDescription" />
+                            <Label bindId="comment" id="comment" />
+                        </ItemTemplate>
+                    </Templates>
+                    <ListSection id="section" dataCollection="vehicle">
+                        <ListItem template="rows" vin:text="{vin}" modelDescription:text="{modelDescription}" comment:text="{comment}" vehicleId="{id}"/>
+                    </ListSection>
+                </ListView>
+            </Window>
+        </NavigationWindow>
+    </Tab>
+</Alloy>

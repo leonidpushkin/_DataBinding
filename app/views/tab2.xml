@@ -1,0 +1,21 @@
+<Alloy>
+    <Collection src="vehicle"/>
+    <Tab title="ListView II" icon="KS_nav_ui.png">
+        <Window title="ListView II">
+            <ListView defaultItemTemplate="rows">
+                <Templates>
+                    <!-- Define your item templates within the Templates tags or use the
+                    Require tag to include a view that only contains an ItemTemplate -->
+                    <ItemTemplate name="rows">
+                        <Label bindId="vin" id="vin" />
+                        <Label bindId="modelDescription" id="modelDescription" />
+                        <Label bindId="comment" id="comment" />
+                    </ItemTemplate>
+                </Templates>
+                <ListSection id="section" dataCollection="vehicle">
+                    <ListItem template="rows" vin:text="{vin}" modelDescription:text="{modelDescription}"  comment:text="{comment}"/>
+                </ListSection>
+            </ListView>
+        </Window>
+    </Tab>
+</Alloy>

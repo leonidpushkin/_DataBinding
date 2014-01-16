@@ -1,0 +1,28 @@
+<Alloy>
+    <Collection src="vehicle"/>
+    <Tab title="ListView I" icon="KS_nav_ui.png">
+        <Window title="ListView I">
+            <ListView defaultItemTemplate="rows">
+                <Templates>
+                    <!-- Define your item templates within the Templates tags or use the
+                    Require tag to include a view that only contains an ItemTemplate -->
+                    <ItemTemplate name="rows">
+                        <Label bindId="vin" id="vin" />
+                        <Label bindId="modelDescription" id="modelDescription" />
+                        <Label bindId="comment" id="comment" />
+                        <Button backgroundColor="blue" color="white" title="Update comment" bindId="vehicleId" onClick="showUpdateDialog" bubbleParent="false" id="updateButton" />
+                    </ItemTemplate>
+                </Templates>
+                <ListSection id="section" dataCollection="vehicle">
+                    <ListItem template="rows" vin:text="{vin}" modelDescription:text="{modelDescription}" comment:text="{comment}" vehicleId:vehicleId="{id}"/>
+                </ListSection>
+            </ListView>
+            <AlertDialog id="updateDialog" onClick="updateComment" title="Enter comment" style="Ti.UI.iPhone.AlertDialogStyle.PLAIN_TEXT_INPUT" cancel="0">
+                <ButtonNames>
+                    <ButtonName>Cancel</ButtonName>
+                    <ButtonName>Update</ButtonName>
+                </ButtonNames>
+            </AlertDialog>
+        </Window>
+    </Tab>
+</Alloy>
