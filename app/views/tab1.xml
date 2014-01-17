@@ -14,7 +14,7 @@
                     </ItemTemplate>
                 </Templates>
                 <ListSection id="section" dataCollection="vehicle">
-                    <ListItem template="rows" vin:text="{vin}" modelDescription:text="{modelDescription}" comment:text="{comment}" vehicleId:vehicleId="{id}"/>
+                    <ListItem template="rows" vin:text="{vin}" modelDescription:text="{modelDescription}" comment:text="{comment}" vehicleId:vehicleId="{alloy_id}"/>
                 </ListSection>
             </ListView>
             <AlertDialog id="updateDialog" onClick="updateComment" title="Enter comment" style="Ti.UI.iPhone.AlertDialogStyle.PLAIN_TEXT_INPUT" cancel="0">

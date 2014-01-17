@@ -14,7 +14,7 @@
                         </ItemTemplate>
                     </Templates>
                     <ListSection id="section" dataCollection="vehicle">
-                        <ListItem template="rows" vin:text="{vin}" modelDescription:text="{modelDescription}" comment:text="{comment}" vehicleId="{id}"/>
+                        <ListItem template="rows" vin:text="{vin}" modelDescription:text="{modelDescription}" comment:text="{comment}" vehicleId="{alloy_id}"/>
                     </ListSection>
                 </ListView>
             </Window>

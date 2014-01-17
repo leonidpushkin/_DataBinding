@@ -1,7 +1,6 @@
 exports.definition = {
     config : {
         columns : {
-            "id" : "integer",
             "vin" : "text",
             "modelDescription" : "text",
             "comment" : "text"
@@ -9,8 +8,7 @@ exports.definition = {
         adapter : {
             type : "sql",
             collection_name : "vehicle",
-            "db_name" : "stock",
-            "idAttribute" : "id"
+            "db_name" : "stock"
         }
     },
     extendModel : function(Model) {
