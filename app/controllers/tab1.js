@@ -1,5 +1,3 @@
-Alloy.Collections.vehicle.fetch();
-
 var vehicleId;
 
 function showUpdateDialog(e) {

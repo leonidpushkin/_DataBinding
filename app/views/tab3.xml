@@ -1,5 +1,4 @@
 <Alloy>
-    <Collection src="vehicle"/>
     <Tab title="ListView III" icon="KS_nav_views.png">
         <NavigationWindow id="navWin">
             <Window title="ListView III">

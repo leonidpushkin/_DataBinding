@@ -1,5 +1,4 @@
 <Alloy>
-    <Collection src="vehicle"/>
     <Tab title="ListView I" icon="KS_nav_ui.png">
         <Window title="ListView I">
             <ListView defaultItemTemplate="rows">

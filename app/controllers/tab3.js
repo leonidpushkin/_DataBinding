@@ -1,5 +1,3 @@
-Alloy.Collections.vehicle.fetch();
-
 function itemClicked(e) {
     var item = e.section.getItemAt(e.itemIndex);
     var controller = Alloy.createController('detailWindow', {
